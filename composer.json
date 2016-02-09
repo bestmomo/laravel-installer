@@ -1,0 +1,17 @@
+{
+  "name": "bestmomo/laravel-installer",
+  "description": "Helper for Laravel 5.2 application installation",
+  "homepage": "http://github.com/bestmomo/laravel-installer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bestmomo",
+      "email": "grandheretique@free.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bestmomo\\Installer\\": "src/"
+    }
+  }
+}
