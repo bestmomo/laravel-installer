@@ -39,12 +39,12 @@ return [
      *
      */
     'database-error' => [
-        'title' => 'Erreur de connection à al base de données',
+        'title' => 'Erreur de connection à la base de données',
         'sub-title' => 'Nous n\'arrivons pas à contacter la base de données avec vos réglages :',
         'item1' => 'Etes-vous sûr de votre identifiant et de votre mot de passe ?',
         'item2' => 'Etes-vous sûr de l\'adresse de la base ?',
         'item3' => 'Etes-vous sûr que la base de données fonctionne ?',
-        'message' => 'Si vous n\'êtes pas trop sûr de comprnedre tous ces termes contactes votre hébergeur.',
+        'message' => 'Si vous n\'êtes pas trop sûr de comprendre tous ces termes contactez votre hébergeur.',
         'button' => 'On essaye encore !',
     ],
 
@@ -78,7 +78,7 @@ return [
      */
     'register' => [
         'title' => 'Creation de l\'administrateur',
-        'sub-title' => 'Vous devez entrez ces informations pour la création de l\'administrateur',
+        'sub-title' => 'Vous devez entrer ces informations pour la création de l\'administrateur',
         'base-label' => 'Votre ',
         'message' => 'Vous aurez besoin de votre mot de passe pour vous connectez, alors conservez-le précieusement !',
         'button' => 'Envoyer',

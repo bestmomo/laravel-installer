@@ -4,6 +4,8 @@ There is already [a helper package](https://github.com/RachidLaasri/LaravelInsta
 
 So I have developed this alternative package with final user in mind.
 
+There is a (french) presentation [there](http://laravel.sillo.org/un-installateur-pour-application-laravel-5-2/).
+
 ***It's still a work in progress and will evolve quickly***
 
 ### Features
@@ -61,7 +63,7 @@ Translations are in `resources/lang/*` in `installer.php` file. You can customiz
 
 Configuration is in `config/installer.php` :
 
-  - ***PHP version*** : you can set newer version if you need for your application
+  - ***PHP version*** : you can set newer version if you need for your application (dont forget to update lang files too)
   - ***Server requirements*** : add other requirements if you need for your application
   - ***Permissions*** : add other permissions if you need for your application
   - ***Login url*** : set the login url for button at the end of installation
@@ -79,5 +81,5 @@ The user model is provided as method parameter so you can easily set a query.
 ## Todo list
 
   - Screenshots
-  - Tutorial
+
 
