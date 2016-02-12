@@ -14,6 +14,7 @@ There is a (french) presentation [there](http://laravel.sillo.org/un-installateu
   - check PHP version
   - check folders permissions
   - check server requirements
+  - allow application publication
   - get the database settings with a form
   - migrate the database
   - seed the database (if needed)
