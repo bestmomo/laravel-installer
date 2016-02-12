@@ -39,7 +39,7 @@ return [
      *
      */
     'database-error' => [
-        'title' => 'Erreur de connection à la base de données',
+        'title' => 'Erreur de connexion à la base de données',
         'sub-title' => 'Nous n\'arrivons pas à contacter la base de données avec vos réglages :',
         'item1' => 'Etes-vous sûr de votre identifiant et de votre mot de passe ?',
         'item2' => 'Etes-vous sûr de l\'adresse de la base ?',
@@ -55,7 +55,7 @@ return [
      */
     'requirement-error' => [
         'title' => 'Il y a un problème au niveau des prérequis',
-        'requirement' => 'Nous ne pouvons pas installer l\'application parce ce composant de PHP n\'est pas présent : ',
+        'requirement' => 'Nous ne pouvons pas installer l\'application parce que ce composant de PHP n\'est pas présent : ',
         'php-version' => 'La version de PHP doit être au moins la 5.5.9 mais votre version est la ',
         'message' => 'Vous devez réparer ce problème pour pouvoir poursuivre l\'installation !'
     ],
@@ -80,7 +80,7 @@ return [
         'title' => 'Creation de l\'administrateur',
         'sub-title' => 'Vous devez entrer ces informations pour la création de l\'administrateur',
         'base-label' => 'Votre ',
-        'message' => 'Vous aurez besoin de votre mot de passe pour vous connectez, alors conservez-le précieusement !',
+        'message' => 'Vous aurez besoin de votre mot de passe pour vous connecter, alors conservez-le précieusement !',
         'button' => 'Envoyer',
     ],
 
