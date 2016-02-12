@@ -66,6 +66,12 @@ Configuration is in `config/installer.php` :
   - ***PHP version*** : you can set newer version if you need for your application (dont forget to update lang files too)
   - ***Server requirements*** : add other requirements if you need for your application
   - ***Permissions*** : add other permissions if you need for your application
+  - ***Publish path*** : if you have to publish directories and files set the path (default is `null`).
+  For example you have a `blog` directory with folders, subfolders and files at the root, set this value :
+  ```
+    'publish-path' => base_path('blog'),
+  ```
+  Take care that any file with same name will be changed for the new one.
   - ***Login url*** : set the login url for button at the end of installation
   - ***Administrator*** : set `true` if you want administrator creation with installation. Set also the `fields` if default values dont suit. But take care that these fields must fit the `create` method of AuthController because package use this method to create the administrator.
 
