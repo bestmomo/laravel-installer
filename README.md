@@ -29,7 +29,7 @@ Add Installer to your composer.json file to require it :
 ```
     require : {
         ...
-        "bestmomo/laravel-installer": "dev-master"
+        "bestmomo/laravel-installer": "0.1.*"
     }
 ```
 
