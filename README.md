@@ -64,6 +64,8 @@ Translations are in `resources/lang/*` in `installer.php` file. You can customiz
 
 Configuration is in `config/installer.php` :
 
+  - ***Application name*** : the name of the application
+  - ***Application version*** : the version number of the application
   - ***PHP version*** : you can set newer version if you need for your application (dont forget to update lang files too)
   - ***Server requirements*** : add other requirements if you need for your application
   - ***Permissions*** : add other permissions if you need for your application
@@ -74,7 +76,7 @@ Configuration is in `config/installer.php` :
   ```
   Take care that any file with same name will be changed for the new one.
   - ***Login url*** : set the login url for button at the end of installation
-  - ***Administrator*** : set `true` if you want administrator creation with installation. Set also the `fields` if default values dont suit. But take care that these fields must fit the `create` method of AuthController because package use this method to create the administrator.
+  - ***Administrator*** : set `true` if you want administrator creation with installation. Set also the `fields` if default values dont suit. But take care that these fields must fit the `create` method of AuthController (or your form request) because package uses this method to create the administrator. If you use form request for validation set it in **validator** configuration. If you use a custom creator method set it in **creator** configuration.
 
 To add other informations to administrator as roles you can create this method in AuthController :
 ```
