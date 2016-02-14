@@ -8,6 +8,8 @@ return [
      *
      */
     'welcome' => [
+        'name' => 'Mon application',
+        'version' => 'V 1.0',
         'title' => 'Bienvenu dans l\'installeur !',
         'sub-title' => 'Votre serveur dispose de tout le nécessaire pour installer cette application. Avant de procéder à l\'installation nous avons besoin de renseignements concernant la base de données :',
         'item1' => 'Nom de la base de données',
@@ -31,6 +33,7 @@ return [
         'password-label' => 'Mot de passe',
         'host-label' => 'Adresse (normalement "localhost", sinon contactez votre hébergeur)',
         'button' => 'Envoyer',
+        'wait' => 'Un peu de patience...',
     ],
 
     /**

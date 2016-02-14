@@ -8,6 +8,8 @@ return [
      *
      */
     'welcome' => [
+        'name' => 'My application',
+        'version' => 'V 1.0',
         'title' => 'Welcome to the Installer !',
         'sub-title' => 'Your server have all requirements and permissions for this application. Before we launch, we need some informations about your database :',
         'item1' => 'Database name',
@@ -31,6 +33,7 @@ return [
         'password-label' => 'Password (Your database password)',
         'host-label' => 'Host name (should be "localhost", if it doesn\'t work ask your hoster)',
         'button' => 'Send',
+        'wait' => 'A bit of patience...',
     ],
 
     /**

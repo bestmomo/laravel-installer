@@ -3,8 +3,13 @@
 @section('content')
 	<div class="card blue-grey darken-1">
 		<div class="card-content white-text">
-			<p class="card-title center-align">{{ trans('installer.welcome.title') }}</p>
 			<hr>
+			<div class="center-align">
+				<p class="card-title">{{ trans('installer.welcome.name') }}</p>
+				<p><em>{{ trans('installer.welcome.version') }}</em></p>
+				<hr>
+				<p class="card-title">{{ trans('installer.welcome.title') }}</p>
+			</div>
 			<p>{{ trans('installer.welcome.sub-title') }}</p>
 			<ol>
 				@for ($i = 1; $i < 5; $i++)
