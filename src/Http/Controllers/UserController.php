@@ -30,15 +30,28 @@ class UserController extends AuthController
     {
         $request->merge(['password_confirmation' => $request->password]);
 
-        $validator = $this->validator($request->all());
-
-        if ($validator->fails()) {
-            return back()->withErrors($validator)->withInput();
+        // Form validation with form request or validator method
+        $validator = config('installer.validator');
+        if($validator !== null) {
+            app($validator);
+        } else {
+            $validator = $this->validator($request->all());
+            if($validator->fails()) {
+                return back()->withErrors($validator)->withInput();
+            }
         }
 
-        $user = $this->create($request->all());
+        // Administrator creation
+        $class = config('installer.creator.class');
+        if($class !== null) {
+            $class = app($class);
+            $method = config('installer.creator.method');
+            $user = $class->{$method}($request->all());
+        } else {
+            $user = $this->create($request->all());
+        }
 
-        if (method_exists($this, 'userAddValues')) {
+        if(method_exists($this, 'userAddValues')) {
             return $this->userAddValues($user);
         }
 

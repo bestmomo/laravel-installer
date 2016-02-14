@@ -27,7 +27,7 @@ return [
         'openssl',
         'pdo',
         'mbstring',
-        'tokenizer'
+        'tokenizer',
     ],
 
     /*
@@ -43,7 +43,7 @@ return [
         'storage/app/'           => '775',
         'storage/framework/'     => '775',
         'storage/logs/'          => '775',
-        'bootstrap/cache/'       => '775'
+        'bootstrap/cache/'       => '775',
     ],
 
     /*
@@ -68,16 +68,42 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Validation for administrator creator
+    |--------------------------------------------------------------------------
+    |
+    | Set name of form request if validator method of AuthController is not used
+    | Set full name space, for example : App\Http\Requests\UserCreateRequest
+    |
+    */
+    'validator' => null,
+
+    /*
+    |--------------------------------------------------------------------------
     | Administrator fields
     |--------------------------------------------------------------------------
     |
     | Set all fields as setted in create method of AuthController
+    | Or in rules of form request
     |
     */    
     'fields' => [
         'name' => 'text',
         'email' => 'email',
-        'password' => 'text'
+        'password' => 'text',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Method for administrator creation
+    |--------------------------------------------------------------------------
+    |
+    | Set class and method for administrator creation there if it's not default create of AuthController
+    | Set full name space, for example : App\Repositories\UserRepository
+    |
+    */    
+    'creator' => [
+        'class' => null,
+        'method' => 'store',
     ],
 
     /*
