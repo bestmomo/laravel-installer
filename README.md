@@ -1,12 +1,12 @@
 ## Laravel Installer
 
+For Laravel 5.3 look at [this repository](https://github.com/bestmomo/laravel5-3-installer).
+
 There is already [a helper package](https://github.com/RachidLaasri/LaravelInstaller) for Laravel application installation. It's great but is not what I need because final people are not developpers and they must have informations that they can understand. On the other hand I think it's usefull to manage the possibility to register an administrator in the installation phase. 
 
 So I have developed this alternative package with final user in mind.
 
 There is a (french) presentation [there](http://laravel.sillo.org/un-installateur-pour-application-laravel-5-2/).
-
-***It's still a work in progress and will evolve quickly***
 
 ### Features
 
